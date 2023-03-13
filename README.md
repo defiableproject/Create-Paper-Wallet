@@ -40,6 +40,3 @@ Create Paper Wallet is a non-profit project, and contributions are welcome. If y
 # Disclaimer
 Create Paper Wallet is provided "as is" and without warranty of any kind, express or implied. The creators of this project are not responsible for any loss or damage caused by the use of this software. Users should use this software at their own risk and exercise caution when handling sensitive information.
 
-
-# Release
-Just unzip all files and open index.html in your browser. No installation required.
