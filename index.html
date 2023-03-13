@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8" />
+
+    <title>Create Paper Wallet</title>
+
+    <meta name="description" content="Create Paper Wallet is a decentralized system that allows you to create wallets and customize or recover them, when possible." data-react-helmet="true">
+    <meta name="google" content="nositelinkssearchbox">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta property="og:site_name" content="Create Paper Wallet">
+    <meta property="og:title" content="Create Paper Wallet" data-react-helmet="true">
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="Create Paper Wallet is a decentralized system that allows you to create wallets and customize or recover them, when possible." data-react-helmet="true">
+
+    <link rel="icon" type="image/png" href="/favicon.png" />
+
+    <script src="/js/libs.js"></script>
+
+    <script src="/js/wordlist_english.js"></script>
+    <script src="/js/wordlist_japanese.js" async></script>
+    <script src="/js/wordlist_spanish.js" async></script>
+    <script src="/js/wordlist_chinese_simplified.js" async></script>
+    <script src="/js/wordlist_chinese_traditional.js" async></script>
+    <script src="/js/wordlist_french.js" async></script>
+    <script src="/js/wordlist_italian.js" async></script>
+    <script src="/js/wordlist_korean.js" async></script>
+    <script src="/js/wordlist_czech.js" async></script>
+    <script src="/js/wordlist_portuguese.js" async></script>
+
+    <script>
+        (function() {
+            const isFileProtocol = location.host === '';
+
+            console.log(isFileProtocol ? '' : 'not', 'running on file protocol.');
+
+            if (isFileProtocol) {
+                document.head.querySelectorAll('[src], [href]').forEach(e => {
+                    e.href && (e.href = '.' + e.getAttribute('href'));
+                    e.src && (e.src = '.' + e.getAttribute('src'));
+
+                    document.write(e.outerHTML);
+                    e.remove();
+                });
+            }
+        })();
+    </script>
+</head>
+<body>
+    <div id="root"></div>
+
+    <script type="module" src="./src/main.tsx"></script>
+</body>
+</html>

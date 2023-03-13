@@ -1,0 +1,5 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Disallow: /wallet/simple/addresses
+Disallow: /wallet/advanced/settings
+Disallow: /wallet/advanced/addresses

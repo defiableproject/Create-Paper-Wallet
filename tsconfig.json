@@ -1,0 +1,32 @@
+{
+    "compilerOptions": {
+        "target": "ESNext",
+
+        "paths": {
+            "@/*": [ "./src/*" ],
+            "@/workers/vanity?worker&inline": [ "./src/workers/vanity.ts" ],
+            "@/workers/walletSimple?worker&inline": [ "./src/workers/walletSimple.ts" ],
+            "@/workers/walletAdvanced?worker&inline": [ "./src/workers/walletAdvanced.ts" ]
+        },
+
+        "allowJs": true,
+        "jsx": "react-jsx",
+        "noEmit": true,
+        "skipLibCheck": true,
+        "strict": true,
+
+        "forceConsistentCasingInFileNames": true,
+        "useDefineForClassFields": true,
+
+        "module": "ESNext",
+        "moduleResolution": "node",
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        "esModuleInterop": false,
+        "allowSyntheticDefaultImports": true
+    },
+    "include": [ "src" ],
+    "references": [
+        { "path": "./tsconfig.node.json" }
+    ]
+}

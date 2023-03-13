@@ -1,0 +1,62 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:react/jsx-runtime"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react",
+        "react-hooks",
+        "@typescript-eslint"
+    ],
+    "rules": {
+        "indent": [ "error", 4 ],
+        "linebreak-style": [ "error", "windows" ],
+        "newline-before-return": "error",
+        "no-trailing-spaces": "error",
+        "no-unused-labels": "off",
+        "no-unused-vars": "off",
+        "prefer-const": [ "error", { "destructuring": "all" } ],
+        "quotes": [ "error", "single", { "allowTemplateLiterals": true } ],
+        "semi": [ "error", "always" ],
+
+        "@typescript-eslint/ban-ts-comment": "off",
+        "@typescript-eslint/ban-types": "warn",
+        "@typescript-eslint/no-namespace": "off",
+        "@typescript-eslint/no-non-null-assertion": "off",
+        "@typescript-eslint/no-extra-non-null-assertion": "off",
+        "@typescript-eslint/no-unused-vars": [ "error", { "args": "none", "ignoreRestSiblings": true } ],
+
+        "react/hook-use-state": "error",
+        "react/no-children-prop": [ "error", { "allowFunctions": true } ],
+        "react/no-multi-comp": [ "warn", { "ignoreStateless": true } ],
+        "react/no-unstable-nested-components": [ "warn", { "allowAsProps": false } ],
+        "react/prop-types": "off",
+        "react/self-closing-comp": [ "error", { "component": true, "html": true } ],
+
+        "react/jsx-boolean-value": "error",
+        "react/jsx-curly-brace-presence": [ "error", "never" ],
+        "react/jsx-fragments": [ "error", "syntax" ],
+        "react/jsx-handler-names": "warn",
+        "react/jsx-no-useless-fragment": [ "error", { "allowExpressions": true } ],
+        "react/jsx-pascal-case": [ "error", { "allowNamespace": true, "allowLeadingUnderscore": true } ],
+        "react/jsx-props-no-multi-spaces": "error",
+        "react/jsx-wrap-multilines": "error",
+
+        "react-hooks/rules-of-hooks": "error",
+        "react-hooks/exhaustive-deps": "warn"
+    }
+}
