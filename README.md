@@ -1,4 +1,8 @@
 # Create Paper Wallet
+
+![Create Paper Wallet](https://github.com/defiableproject/Create-Paper-Wallet/blob/main/public/img/logo-lg.png?raw=true)
+
+
 Create Paper Wallet is a free, non-profit project that aims to be the first platform partner of the DeFiable Project, which serves as a gateway for users to know about DeFiable. This simple and objective platform has a clear purpose and seeks to gain recognition from the crypto assets and Dapps community.
 
 The project's main objective is to contribute to the dissemination of the DeFiable Project by bringing new users and holders to DeFiable Coin (DPC), generating liquidity for the currency, and joining new projects that will be part of the DeFiable Project.
